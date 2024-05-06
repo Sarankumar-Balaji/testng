@@ -28,6 +28,7 @@ public class Launch_App {
 		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("bsarankumarbalaji@gmail.com");
 		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("Shopperstack@12");
 		driver.findElement(By.xpath("//button[@id='Login']")).click();
+		
 		driver.findElement(By.xpath("(//*[@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv' and @id='addToWishlist'])[7]")).click();
 		
 		driver.findElement(By.xpath("//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-bjoz8z']")).click();
