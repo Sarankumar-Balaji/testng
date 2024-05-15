@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <parameter name="username" value="Demosalesmanager"/>
+  <test thread-count="5" name="Test(failed)" verbose="5">
     <classes>
-      <class name="Test_Package.Launch_App">
+      <class name="Test_Package.CreateLead">
         <methods>
-          <include name="driver"/>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="LaunchApp"/>
+          <include name="createLead" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- Test_Package.Launch_App -->
+      </class> <!-- Test_Package.CreateLead -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
