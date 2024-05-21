@@ -3,16 +3,13 @@ package Test_Package;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.spi.FileSystemProvider;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 public class ReadExcel {
 //	@DataProvider(name="dynamicfetchData")
@@ -38,7 +35,7 @@ public class ReadExcel {
 		 * 
 		 * return data;
 		 */
-	@DataProvider(name="dynamicfetchData")
+		@DataProvider(name = "dynamicfetchData")
 	public static String[][] readExcel() throws IOException
 	{
 		File file=new File("./data/CreateLead.xlsx");
@@ -63,6 +60,7 @@ public class ReadExcel {
 		return data;
 	
 	}
+
 	/*
 	 * public static void main(String[] args) throws IOException { String[][] excel
 	 * = readExcel(); for (String[] strings : excel) { System.out.println(strings);

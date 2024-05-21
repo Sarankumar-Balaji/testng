@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T12:30:52 IST" name="Suite" finished-at="2024-05-15T12:31:21 IST" duration-ms="28966">
+  <suite started-at="2024-05-21T10:50:47 IST" name="Suite" finished-at="2024-05-21T10:51:09 IST" duration-ms="22736">
     <groups>
       <group name="sanity">
-        <method signature="Login.login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@3e58a80e]" name="login" class="Test_Package.Login"/>
+        <method signature="Login.login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@5ffead27]" name="login" class="Test_Package.Login"/>
+        <method signature="Login.login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@72967906]" name="login" class="Test_Package.Login"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-05-15T12:30:52 IST" name="Test" finished-at="2024-05-15T12:31:21 IST" duration-ms="28966">
+    <test started-at="2024-05-21T10:50:47 IST" name="chrome" finished-at="2024-05-21T10:51:08 IST" duration-ms="21145">
       <class name="Test_Package.Login">
-        <test-method is-config="true" signature="LaunchApp(java.lang.String)[pri:0, instance:Test_Package.Login@3e58a80e]" started-at="2024-05-15T12:30:46 IST" name="LaunchApp" finished-at="2024-05-15T12:30:52 IST" duration-ms="6158" status="PASS">
+        <test-method is-config="true" signature="LaunchApp(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@5ffead27]" started-at="2024-05-21T10:50:47 IST" name="LaunchApp" finished-at="2024-05-21T10:50:54 IST" duration-ms="7037" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[http://leaftaps.com/opentaps/control/main]]>
               </value>
@@ -21,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApp -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@3e58a80e]" started-at="2024-05-15T12:30:52 IST" name="login" finished-at="2024-05-15T12:30:54 IST" duration-ms="1906" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@5ffead27]" started-at="2024-05-21T10:50:54 IST" name="login" finished-at="2024-05-21T10:50:59 IST" duration-ms="5145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,107 +43,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test_Package.Login@5ffead27]" started-at="2024-05-21T10:51:07 IST" name="logout" finished-at="2024-05-21T10:51:08 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
       </class> <!-- Test_Package.Login -->
       <class name="Test_Package.CreateLead">
-        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@67d48005]" started-at="2024-05-15T12:30:55 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-15T12:31:00 IST" duration-ms="4923" status="PASS">
+        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@3e58a80e]" started-at="2024-05-21T10:51:00 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-21T10:51:07 IST" duration-ms="7026" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[WPS1]]>
+                <![CDATA[tcs]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Doc1]]>
+                <![CDATA[tata]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Pdf1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@67d48005]" started-at="2024-05-15T12:31:00 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-15T12:31:05 IST" duration-ms="5052" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WPS2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doc2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pdf2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@67d48005]" started-at="2024-05-15T12:31:05 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-15T12:31:10 IST" duration-ms="5184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WPS3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doc3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pdf3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@67d48005]" started-at="2024-05-15T12:31:10 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-15T12:31:16 IST" duration-ms="5678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WPS4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doc4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pdf4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@67d48005]" started-at="2024-05-15T12:31:16 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-15T12:31:21 IST" duration-ms="5025" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WPS5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doc5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pdf5]]>
+                <![CDATA[services]]>
               </value>
             </param>
           </params>
@@ -145,6 +71,69 @@
           </reporter-output>
         </test-method> <!-- createLead -->
       </class> <!-- Test_Package.CreateLead -->
-    </test> <!-- Test -->
+    </test> <!-- chrome -->
+    <test started-at="2024-05-21T10:50:47 IST" name="firefox" finished-at="2024-05-21T10:51:09 IST" duration-ms="22736">
+      <class name="Test_Package.Login">
+        <test-method is-config="true" signature="LaunchApp(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@72967906]" started-at="2024-05-21T10:50:47 IST" name="LaunchApp" finished-at="2024-05-21T10:50:53 IST" duration-ms="6406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test_Package.Login@72967906]" started-at="2024-05-21T10:50:53 IST" name="login" finished-at="2024-05-21T10:50:58 IST" duration-ms="5277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demosalesmanager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Test_Package.Login@72967906]" started-at="2024-05-21T10:51:07 IST" name="logout" finished-at="2024-05-21T10:51:09 IST" duration-ms="2090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- Test_Package.Login -->
+      <class name="Test_Package.CreateLead">
+        <test-method signature="createLead(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_Package.CreateLead@5b8dfcc1]" started-at="2024-05-21T10:51:00 IST" name="createLead" data-provider="dynamicfetchData" finished-at="2024-05-21T10:51:07 IST" duration-ms="7682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tcs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tata]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[services]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+      </class> <!-- Test_Package.CreateLead -->
+    </test> <!-- firefox -->
   </suite> <!-- Suite -->
 </testng-results>
